@@ -22,18 +22,18 @@ export function LimitationsList({
     <section className="rounded-xl border border-amber-200 bg-amber-50/60 p-4">
       <div className="flex items-center gap-2">
         <Info aria-hidden="true" className="h-4 w-4 text-amber-600" />
-        <h3 className="text-xs font-semibold tracking-[0.08em] text-amber-950 uppercase">
+        <h3 className="text-xs md:text-sm font-semibold tracking-[0.08em] text-amber-950 uppercase">
           {title}
         </h3>
       </div>
       {values.length === 0 ? (
-        <p className="mt-2 text-sm leading-6 text-amber-900/70">{emptyMessage}</p>
+        <p className="mt-2 text-sm md:text-base leading-6 text-amber-900/70">{emptyMessage}</p>
       ) : (
         <ul className="mt-3 space-y-2">
           {values.map((limitation, index) => (
             <li
               key={`${limitation}-${index}`}
-              className="flex gap-2 text-sm leading-6 text-amber-950/85"
+              className="flex gap-2 text-sm md:text-base leading-6 text-amber-950/85"
             >
               <span
                 aria-hidden="true"

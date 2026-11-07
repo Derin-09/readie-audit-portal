@@ -24,8 +24,8 @@ export function ErrorState({
           <TriangleExclamationPoint aria-hidden="true" className="h-5 w-5" />
         </div>
         <div className="min-w-0 flex-1">
-          <h2 className="text-base font-semibold text-rose-950">{title}</h2>
-          <p className="mt-1.5 text-sm leading-6 text-rose-800/80">
+          <h2 className="text-base md:text-lg font-semibold text-rose-950">{title}</h2>
+          <p className="mt-1.5 text-sm md:text-base leading-6 text-rose-800/80">
             {description}
           </p>
         </div>

@@ -7,7 +7,7 @@ export function CampaignSkeleton() {
         {Array.from({ length: 4 }).map((_, index) => (
           <div
             key={index}
-            className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
+            className="rounded-xl  bg-white p-5 "
           >
             <div className="flex items-start justify-between gap-3">
               <div className="flex-1 space-y-3">
@@ -22,14 +22,14 @@ export function CampaignSkeleton() {
         ))}
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+      <div className="rounded-xl  bg-white p-4 ">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <Skeleton className="h-10 w-full sm:w-96" />
           <Skeleton className="h-10 w-full sm:w-48" />
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-xl  bg-white ">
         <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
           <Skeleton className="h-3 w-full max-w-xl" />
         </div>

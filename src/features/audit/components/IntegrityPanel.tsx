@@ -70,7 +70,7 @@ function SummaryCard({
           <Icon aria-hidden="true" className="h-4 w-4" />
         </span>
       </div>
-      <p className="mt-3 text-xs leading-5 text-slate-500">{description}</p>
+      <p className="mt-3 text-xs md:text-sm leading-5 text-slate-500">{description}</p>
     </div>
   );
 }
@@ -184,10 +184,10 @@ export function IntegrityPanel({ recording }: IntegrityPanelProps) {
       <section aria-label="Risk assessments">
         <div className="mb-3 flex items-end justify-between gap-3">
           <div>
-            <h2 className="text-sm font-semibold text-slate-900">
+            <h2 className="text-sm md:text-base font-semibold text-slate-900">
               Risk assessments
             </h2>
-            <p className="mt-1 text-xs text-slate-500">
+            <p className="mt-1 text-xs md:text-sm text-slate-500">
               Category-level automated findings. Each signal includes confidence
               and supporting observations.
             </p>
@@ -208,10 +208,10 @@ export function IntegrityPanel({ recording }: IntegrityPanelProps) {
 
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         <section className="rounded-xl  bg-white p-4 shadow-sm sm:p-5">
-          <h3 className="text-sm font-semibold text-slate-900">
+          <h3 className="text-sm md:text-base font-semibold text-slate-900">
             Suspicious time ranges
           </h3>
-          <p className="mt-1 mb-3 text-xs leading-5 text-slate-500">
+          <p className="mt-1 mb-3 text-xs md:text-sm leading-5 text-slate-500">
             Ranges returned by the analysis service for reviewer attention.
           </p>
           <UnknownDataList
@@ -222,10 +222,10 @@ export function IntegrityPanel({ recording }: IntegrityPanelProps) {
         </section>
 
         <section className="rounded-xl  bg-white p-4 shadow-sm sm:p-5">
-          <h3 className="text-sm font-semibold text-slate-900">
+          <h3 className="text-sm md:text-base font-semibold text-slate-900">
             Specialist results
           </h3>
-          <p className="mt-1 mb-3 text-xs leading-5 text-slate-500">
+          <p className="mt-1 mb-3 text-xs md:text-sm leading-5 text-slate-500">
             Additional model findings returned alongside the primary analysis.
           </p>
           <UnknownDataList

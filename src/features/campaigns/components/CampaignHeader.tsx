@@ -18,7 +18,7 @@ export function CampaignHeader({
   return (
     <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
       <div className="min-w-0">
-        <div className="mb-2 flex items-center gap-2 text-xs font-medium text-slate-500">
+        <div className="mb-2 flex items-center gap-2 text-xs md:text-sm font-medium text-slate-500">
           <ScanSearch aria-hidden="true" className="h-4 w-4" />
           <span>Campaign evaluation records</span>
           <span aria-hidden="true" className="text-slate-300">
@@ -29,7 +29,7 @@ export function CampaignHeader({
         <h1 className="text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
           Campaign {campaignId}
         </h1>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
+        <p className="mt-2 max-w-2xl text-sm md:text-base leading-6 text-slate-500">
           Review candidate assessment records, analytics progress and room-level
           evidence for this campaign.
           {jobTitle ? (

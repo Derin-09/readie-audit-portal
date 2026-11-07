@@ -49,22 +49,22 @@ export function TranscriptPanel({ recording }: TranscriptPanelProps) {
   const entries = Array.isArray(transcript.entries) ? transcript.entries : [];
 
   return (
-    <section className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+    <section className="overflow-hidden rounded-xl  bg-white ">
       <div className="flex flex-col gap-2 border-b border-slate-200 bg-slate-50/70 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
         <div className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-500">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg  bg-white text-slate-500">
             <MessageSquareText aria-hidden="true" className="h-4 w-4" />
           </span>
           <div>
-            <h2 className="text-sm font-semibold text-slate-900">
+            <h2 className="text-sm md:text-base font-semibold text-slate-900">
               Interview transcript
             </h2>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs md:text-sm text-slate-500">
               Speaker-separated evidence with source timestamps.
             </p>
           </div>
         </div>
-        <p className="text-xs font-medium text-slate-500">
+        <p className="text-xs md:text-sm font-medium text-slate-500">
           {entries.length} {entries.length === 1 ? "entry" : "entries"}
         </p>
       </div>
@@ -90,7 +90,7 @@ export function TranscriptPanel({ recording }: TranscriptPanelProps) {
                 className="grid gap-3 px-4 py-4 sm:grid-cols-[5.5rem_2.5rem_minmax(0,1fr)] sm:px-5"
               >
                 <div className="sm:pt-0.5">
-                  <span className="inline-flex items-center rounded-md border border-slate-200 bg-slate-50 px-2 py-1 font-mono text-[11px] text-slate-600">
+                  <span className="inline-flex items-center rounded-md  bg-slate-50 px-2 py-1 font-mono text-[11px] md:text-base text-slate-600">
                     {entry.timestamp || "No time"}
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export function TranscriptPanel({ recording }: TranscriptPanelProps) {
 
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <p className="text-sm font-semibold text-slate-900">
+                    <p className="text-sm md:text-base font-semibold text-slate-900">
                       {entry.speaker || "Speaker not provided"}
                     </p>
                     {hasVideo ? (
@@ -112,7 +112,7 @@ export function TranscriptPanel({ recording }: TranscriptPanelProps) {
                         href={entry.videoUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 rounded-md px-1.5 py-1 text-[11px] font-semibold text-sky-700 transition hover:bg-sky-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+                        className="inline-flex items-center gap-1 rounded-md px-1.5 py-1 text-[11px] md:text-base font-semibold text-sky-700 transition hover:bg-sky-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                       >
                         <Play aria-hidden="true" className="h-3 w-3" />
                         View clip
@@ -123,7 +123,7 @@ export function TranscriptPanel({ recording }: TranscriptPanelProps) {
                       </a>
                     ) : null}
                   </div>
-                  <p className="mt-1.5 text-sm leading-6 break-words text-slate-600">
+                  <p className="mt-1.5 text-sm md:text-base leading-6 break-words text-slate-600">
                     {entry.text || "No transcript text was provided for this entry."}
                   </p>
                 </div>

@@ -35,7 +35,7 @@ function MetricCard({
     <div className="rounded-xl  bg-white p-4  sm:p-5">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-[11px] font-semibold tracking-[0.1em] text-slate-500 uppercase">
+          <p className="text-[11px] md:text-base font-semibold tracking-[0.1em] text-slate-500 uppercase">
             {label}
           </p>
           <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
@@ -48,7 +48,7 @@ function MetricCard({
           <Icon aria-hidden="true" className="h-4 w-4" />
         </span>
       </div>
-      <p className="mt-3 text-xs leading-5 text-slate-500">{detail}</p>
+      <p className="mt-3 text-xs md:text-sm leading-5 text-slate-500">{detail}</p>
       {children ? <div className="mt-3">{children}</div> : null}
     </div>
   );

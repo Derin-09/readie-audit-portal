@@ -85,7 +85,7 @@ export function CampaignToolbar({
               value={search}
               onChange={(event) => onSearchChange(event.target.value)}
               placeholder="Search by candidate email"
-              className="h-10 w-full rounded-lg border border-slate-300 bg-white pr-9 pl-9 text-sm text-slate-900 shadow-sm transition placeholder:text-slate-400 focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-200"
+              className="h-10 w-full rounded-lg  bg-white pr-9 pl-9 text-sm md:text-base text-slate-900 border border-slate-300 transition placeholder:text-slate-400 focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-200"
             />
             {search ? (
               <button
@@ -111,7 +111,7 @@ export function CampaignToolbar({
                 onChange={(event) =>
                   onStatusChange(event.target.value as CampaignStatusFilter)
                 }
-                className="h-10 min-w-44 appearance-none rounded-lg border border-slate-300 bg-white py-0 pr-9 pl-3 text-sm font-medium text-slate-700 shadow-sm transition focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-200"
+                className="h-10 min-w-44 appearance-none rounded-lg  bg-white py-0 pr-9 pl-3 text-sm md:text-base font-medium text-slate-700 border border-slate-300 transition focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-200"
               >
                 {statusOptions.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -150,7 +150,7 @@ export function CampaignToolbar({
           ) : null}
           <p
             aria-live="polite"
-            className="ml-auto text-xs font-medium text-slate-500"
+            className="ml-auto text-xs md:text-sm font-medium text-slate-500"
           >
             Showing <span className="text-slate-900">{visibleCount}</span> of{" "}
             {totalCount}

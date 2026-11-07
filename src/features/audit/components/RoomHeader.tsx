@@ -63,17 +63,17 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
       : "Not available";
 
   return (
-    <section className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+    <section className="overflow-hidden rounded-xl  bg-white ">
       <div className="flex flex-col gap-4 p-4 sm:p-5 lg:flex-row lg:items-start lg:justify-between">
         <div className="flex min-w-0 items-start gap-3">
           <span
             aria-hidden="true"
-            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-sm font-bold tracking-wide text-slate-600"
+            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100 text-sm md:text-base md:text-base font-bold tracking-wide text-slate-600"
           >
             {getInitials(candidateLabel)}
           </span>
           <div className="min-w-0">
-            <p className="flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.12em] text-slate-400 uppercase">
+            <p className="flex items-center gap-1.5 text-[11px] md:text-base font-semibold tracking-[0.12em] text-slate-400 uppercase">
               <UserRound aria-hidden="true" className="h-3.5 w-3.5" />
               Candidate evaluation room
             </p>
@@ -82,7 +82,7 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
             </h1>
             <p
               title={candidateEmail}
-              className="mt-1 flex max-w-xl items-center gap-1.5 truncate text-sm text-slate-500"
+              className="mt-1 flex max-w-xl items-center gap-1.5 truncate text-sm md:text-base text-slate-500"
             >
               <Mail aria-hidden="true" className="h-3.5 w-3.5 shrink-0 text-slate-400" />
               <span className="truncate">{candidateEmail}</span>
@@ -91,7 +91,7 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-500">
+          <span className="inline-flex items-center rounded-full  bg-slate-50 px-2.5 py-1 text-[11px] md:text-base font-medium text-slate-500">
             Campaign {campaignLabel}
           </span>
           {hasRecordingUrl ? (
@@ -99,7 +99,7 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
               href={recording.finalUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
+              className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 text-xs md:text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
             >
               <Play aria-hidden="true" className="h-3.5 w-3.5" />
               Open recording
@@ -111,7 +111,7 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
 
       <div className="grid grid-cols-2 gap-px border-t border-slate-200 bg-slate-200 sm:grid-cols-4">
         <Fact label="Campaign">
-          <p className="font-mono text-sm font-semibold text-slate-800">
+          <p className="font-mono text-sm md:text-base font-semibold text-slate-800">
             {campaignLabel}
           </p>
         </Fact>
@@ -128,7 +128,7 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
           />
         </Fact>
         <Fact label="Room artifacts">
-          <p className="text-sm font-semibold text-slate-800">
+          <p className="text-sm md:text-base font-semibold text-slate-800">
             {recordingsCount}{" "}
             <span className="font-normal text-slate-500">
               {recordingsCount === 1 ? "recording" : "recordings"}
@@ -145,7 +145,7 @@ export function RoomHeader({ recording, recordingsCount }: RoomHeaderProps) {
           <RoomIdentifier
             value={recording.roomName}
             wrap
-            className="mt-1 text-[11px] text-slate-600"
+            className="mt-1 text-[11px] md:text-base text-slate-600"
           />
         </div>
         <div className="flex flex-wrap items-center gap-4">

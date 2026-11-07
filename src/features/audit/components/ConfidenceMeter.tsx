@@ -17,8 +17,8 @@ export function ConfidenceMeter({
   return (
     <div>
       <div className="mb-1.5 flex items-center justify-between gap-3">
-        <span className="text-xs font-medium text-slate-500">{label}</span>
-        <span className="text-xs font-semibold text-slate-800">
+        <span className="text-xs md:text-sm font-medium text-slate-500">{label}</span>
+        <span className="text-xs md:text-sm font-semibold text-slate-800">
           {formatConfidence(value)}
         </span>
       </div>

@@ -35,7 +35,7 @@ function InvalidCampaignState() {
       action={
         <Link
           to={`/jobs/campaign/${SUPPORTED_CAMPAIGN_IDS[0]}`}
-          className="inline-flex h-10 items-center justify-center rounded-lg bg-slate-950 px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-950"
+          className="inline-flex h-10 items-center justify-center rounded-lg bg-slate-950 px-4 text-sm md:text-base font-semibold text-white shadow-sm transition hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-950"
         >
           Return to Campaign {SUPPORTED_CAMPAIGN_IDS[0]}
         </Link>
@@ -150,7 +150,7 @@ function CampaignContent({ campaignId }: CampaignContentProps) {
                 <button
                   type="button"
                   onClick={clearFilters}
-                  className="inline-flex h-9 items-center justify-center rounded-lg border border-slate-300 bg-white px-3 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
+                  className="inline-flex h-9 items-center justify-center rounded-lg border border-slate-300 bg-white px-3 text-xs md:text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
                 >
                   Clear filters
                 </button>

@@ -3,7 +3,7 @@ import { Skeleton } from "../../../components/ui/Skeleton";
 export function RoomSkeleton() {
   return (
     <div className="space-y-5" aria-busy="true" aria-label="Loading evaluation room">
-      <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-xl  bg-white ">
         <div className="flex flex-col gap-4 p-5 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-center gap-3">
             <Skeleton className="h-12 w-12 rounded-full" />
@@ -35,7 +35,7 @@ export function RoomSkeleton() {
         <Skeleton className="h-10 w-52" />
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="rounded-xl  bg-white p-5 ">
         <Skeleton className="h-5 w-44" />
         <Skeleton className="mt-2 h-3 w-64" />
         <div className="mt-6 space-y-5">

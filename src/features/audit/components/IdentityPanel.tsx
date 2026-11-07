@@ -119,13 +119,13 @@ export function IdentityPanel({ recording }: IdentityPanelProps) {
               <DecisionIcon aria-hidden="true" className="h-5 w-5" />
             </span>
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] text-slate-500 uppercase">
+              <p className="text-[11px] md:text-base font-semibold tracking-[0.12em] text-slate-500 uppercase">
                 Phase 1 identity decision
               </p>
               <h2 className="mt-1 text-xl font-semibold tracking-tight text-slate-950">
                 {decision ? formatDecisionLabel(decision) : "Not available"}
               </h2>
-              <p className="mt-1 text-xs leading-5 text-slate-600">
+              <p className="mt-1 text-xs md:text-sm leading-5 text-slate-600">
                 Automated identity comparison between the reference and
                 interview video.
               </p>
@@ -147,7 +147,7 @@ export function IdentityPanel({ recording }: IdentityPanelProps) {
                 }
               />
             ) : (
-              <p className="text-xs text-slate-500">
+              <p className="text-xs md:text-sm text-slate-500">
                 Confidence value not available.
               </p>
             )}
@@ -158,7 +158,7 @@ export function IdentityPanel({ recording }: IdentityPanelProps) {
       <section className="rounded-xl  bg-white p-4  sm:p-5">
         <div className="flex items-center gap-2">
           <Video aria-hidden="true" className="h-4 w-4 text-slate-400" />
-          <h3 className="text-xs font-semibold tracking-[0.08em] text-slate-500 uppercase">
+          <h3 className="text-xs md:text-sm font-semibold tracking-[0.08em] text-slate-500 uppercase">
             Verification signals
           </h3>
         </div>
@@ -201,7 +201,7 @@ export function IdentityPanel({ recording }: IdentityPanelProps) {
         <section className="rounded-xl  bg-white p-4  sm:p-5">
           <div className="mb-3 flex items-center gap-2">
             <Users aria-hidden="true" className="h-4 w-4 text-slate-400" />
-            <h3 className="text-sm font-semibold text-slate-900">
+            <h3 className="text-sm md:text-base font-semibold text-slate-900">
               Matching evidence
             </h3>
           </div>
@@ -218,7 +218,7 @@ export function IdentityPanel({ recording }: IdentityPanelProps) {
               aria-hidden="true"
               className="h-4 w-4 text-slate-400"
             />
-            <h3 className="text-sm font-semibold text-slate-900">
+            <h3 className="text-sm md:text-base font-semibold text-slate-900">
               Conflicting evidence
             </h3>
           </div>

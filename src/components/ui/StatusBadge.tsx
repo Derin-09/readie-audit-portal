@@ -35,24 +35,23 @@ export function StatusBadge({
   label,
   tone = "neutral",
   className,
-  showDot = true,
 }: StatusBadgeProps) {
   const styles = toneStyles[tone];
 
   return (
     <span
       className={cn(
-        "inline-flex max-w-full items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-semibold tracking-[0.04em] uppercase",
+        "inline-flex max-w-full items-center gap-1.5 rounded-full  px-2.5 py-1 text-[11px] md:text-base font-semibold tracking-[0.04em] uppercase",
         styles.container,
         className,
       )}
     >
-      {showDot ? (
+      {/* {showDot ? (
         <span
           aria-hidden="true"
           className={cn("h-1.5 w-1.5 shrink-0 rounded-full", styles.dot)}
         />
-      ) : null}
+      ) : null} */}
       <span className="truncate">{label}</span>
     </span>
   );

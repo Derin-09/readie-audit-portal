@@ -34,7 +34,7 @@ function BackToCampaign({ campaignId }: { campaignId: SupportedCampaignId }) {
   return (
     <Link
       to={`/jobs/campaign/${campaignId}`}
-      className="inline-flex items-center gap-1.5 rounded-md py-1 text-xs font-semibold text-slate-500 transition hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
+      className="inline-flex items-center gap-1.5 rounded-md py-1 text-xs md:text-sm font-semibold text-slate-500 transition hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
     >
       <ArrowLeft aria-hidden="true" className="h-3.5 w-3.5" />
       Back to Campaign {campaignId}
@@ -102,7 +102,7 @@ export function RoomPage() {
     return (
       <div className="space-y-4">
         <BackToCampaign campaignId={campaignId} />
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="rounded-xl  bg-white p-4">
           <p className="text-[10px] font-semibold tracking-[0.08em] text-slate-400 uppercase">
             Requested room
           </p>

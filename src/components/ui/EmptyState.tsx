@@ -32,8 +32,8 @@ export function EmptyState({
       <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full  bg-white text-slate-400 ">
         <Icon aria-hidden="true" className="h-5 w-5" />
       </div>
-      <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
-      <p className="mt-1.5 max-w-md text-sm leading-6 text-slate-500">
+      <h3 className="text-sm md:text-base font-semibold text-slate-900">{title}</h3>
+      <p className="mt-1.5 max-w-md text-sm md:text-base leading-6 text-slate-500">
         {description}
       </p>
       {action ? <div className="mt-5">{action}</div> : null}

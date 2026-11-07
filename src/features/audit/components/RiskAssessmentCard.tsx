@@ -43,8 +43,8 @@ export function RiskAssessmentCard({
             <Icon aria-hidden="true" className="h-4 w-4" />
           </span>
           <div className="min-w-0">
-            <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
-            <p className="mt-0.5 text-xs leading-5 text-slate-500">
+            <h3 className="text-sm md:text-base font-semibold text-slate-900">{title}</h3>
+            <p className="mt-0.5 text-xs md:text-sm leading-5 text-slate-500">
               {description}
             </p>
           </div>
@@ -73,7 +73,7 @@ export function RiskAssessmentCard({
               Observations
             </h4>
             {observations.length === 0 ? (
-              <p className="mt-2 text-xs leading-5 text-slate-500">
+              <p className="mt-2 text-xs md:text-sm leading-5 text-slate-500">
                 No observations were returned for this risk category.
               </p>
             ) : (
@@ -112,7 +112,7 @@ export function RiskAssessmentCard({
                         </span>
                       ) : null}
                     </div>
-                    <p className="text-sm leading-6 text-slate-700">
+                    <p className="text-sm md:text-base leading-6 text-slate-700">
                       {observation.observation || "No description provided."}
                     </p>
                   </li>
@@ -122,7 +122,7 @@ export function RiskAssessmentCard({
           </div>
         </>
       ) : (
-        <div className="mt-4 rounded-lg border border- bg-slate-50/70 px-3 py-3 text-xs leading-5 text-slate-500">
+        <div className="mt-4 rounded-lg border border- bg-slate-50/70 px-3 py-3 text-xs md:text-sm leading-5 text-slate-500">
           This risk assessment was not returned for the room.
         </div>
       )}

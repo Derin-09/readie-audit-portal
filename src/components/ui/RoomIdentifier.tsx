@@ -15,7 +15,7 @@ export function RoomIdentifier({
     <span
       title={value}
       className={cn(
-        "block font-mono text-[11px] tracking-tight text-slate-500",
+        "block font-mono text-[11px] md:text-base tracking-tight text-slate-500",
         wrap ? "break-all" : "truncate",
         className,
       )}
